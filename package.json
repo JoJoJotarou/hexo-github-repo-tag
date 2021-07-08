@@ -1,0 +1,26 @@
+{
+  "name": "hexo-github-repo-tag",
+  "version": "0.0.1",
+  "description": "A simple and beautiful card for the GitHub repository.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoJoJotarou/hexo-github-repo-tag.git"
+  },
+  "homepage": "https://github.com/JoJoJotarou/hexo-github-repo-tag#readme",
+  "keywords": [
+    "Hexo",
+    "hexo-plugin",
+    "github repository",
+    "tag",
+    "card"
+  ],
+  "author": "JoJoJotarou",
+  "license": "MIT",
+  "main": "index",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
