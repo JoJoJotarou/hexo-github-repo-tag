@@ -1,7 +1,7 @@
 {
   "name": "hexo-github-repo-tag",
   "version": "0.0.1",
-  "description": "A simple and beautiful card for the GitHub repository.",
+  "description": "A simple and beautiful tag for the GitHub repository.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
