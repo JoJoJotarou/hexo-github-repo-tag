@@ -35,13 +35,13 @@ const github = {
             axios(options).then(response => {
                 resolve(response)
             }).catch(error => {
-                resolve({'status': error.response.status})
+                resolve({ 'status': error.response.status })
             })
         })
     }
 }
 
-hexo.extend.tag.register('githubrepo',async function (args, content) {
+hexo.extend.tag.register('githubrepo', async function (args, content) {
 
     return github.repo(args[0]).then(function (resp) {
         if (resp.status != 200) {
@@ -141,10 +141,12 @@ hexo.extend.tag.register('githubrepo',async function (args, content) {
                     overflow: hidden;
                 }
 
-                .gr-fullname h5 {
+                .gr-fullname p {
                     line-height: 2rem;
                     margin: 10px 0px 0px 0px;
                     padding: 0;
+                    font-size: .83rem;
+                    font-weight: bolder;
                 }
 
                 .gr-description {
@@ -237,7 +239,9 @@ hexo.extend.tag.register('githubrepo',async function (args, content) {
                         <img src="${data.owner.avatar_url}" alt="">
                     </div>
                     <div class="gr-content">
-                        <div class="gr-fullname"><h5><i class="fab fa-github fa-lg" aria-hidden="true" id="gr-github-icon"></i> ${data.full_name}</h5></div>
+                        <div class="gr-fullname">
+                            <p><i class="fab fa-github fa-lg" aria-hidden="true" id="gr-github-icon"></i> ${data.full_name}</p>
+                        </div>
                         <div class="gr-description">
                             ${data.description}
                         </div>
